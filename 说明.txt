@@ -1,0 +1,27 @@
+日期：2021-2-22
+撰写人：张红伟
+说明：这部分提供基础的功能，后面的做业务模块功能时候无需修改此处
+Zfine.Code下主要提供基础功能
+	1.verifycode是用户登录页的验证码的生成
+	2.Serialize用于对字符串、数据、对象列表进行序列化
+	3.Licence用于软件授权的管理
+	4.Gzip用于对字符串、字节数据进行压缩及其解压缩
+	5.Common主要用删除数组重复项、计时、生成随机编号、0-9随机数、删除数组最后字符之后字符、汉字转拼音
+	6.WEB文件夹中主要进行WEB方面的处理：包括Treeselect、TreeGid、TreeView、AjaxResult、Pagination分页、TreeQuery、WebHelper（Seesion、Cookies、URL处理等、格式化字符串））
+	7.Validate用于各种格式验证，例如整数、浮点数、字符串长度及包含字符种类、中文格式、日期检查、身份证号、电话、手机号、邮箱等
+	8.NET：用于网络方面的功能
+	9.MAIL：进行邮件收发功能
+	10.log：操作日志
+	11.Json：Json格式处理
+	12.File:用于文件处理
+	13.Extend：Ex.Convert格式转换
+	14.EXCEL：用于EXCEL文件处理，如EXCEL文件导入导出
+	15.Configs:关于系统配置的管理、包括数据库的连接
+	16.Cache：用于缓存的管理
+Zfine.Data下
+	1.NFineDbContext:是实体类和数据库之间的桥梁，DbContext主要负责与数据交互
+	2.DbHelper：用于数据库的连接并打开数据库，连接字符串放在网站的Condfigs/database.config文件中
+	3.EntityInterfaceExtensions：实体接口相关扩展
+	4.IRepositoryBase：继承自IDisposable。对于一些非托管资源，比如数据库链接对象等，需要实现IDisposable接口进行手动的垃圾回收
+	5.IRepositoryBase：仓储接口，主要是数据库增删改查
+	6.RepositoryBase : IRepositoryBase, IDisposable，实现对数据库数据的增删改查
